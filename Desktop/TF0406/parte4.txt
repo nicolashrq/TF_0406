@@ -1,0 +1,22 @@
+Monitoramento e Métricas
+
+Métricas Críticas
+
+Latência de leitura/escrita
+Importante para garantir que o sistema fique rápido sob carga
+
+Throughput (operações por segundo)
+Mede o desempenho da aplicação em tempo real
+
+Balanceamento entre shards
+Identifica se um shard está sobrecarregado e evita gargalos
+
+Rebalanceamento de Partições
+O shard de SP está com 80% das entregas
+
+Solução:
+
+Mudar chave de sharding para estado + cliente_id
+
+Usar MongoDB Balancer para redistribuir os dados automaticamente entre os shards
+

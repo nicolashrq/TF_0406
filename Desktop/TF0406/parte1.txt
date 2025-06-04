@@ -1,0 +1,5 @@
+Tipo de Banco NoSQL Escolhido: Documentos (MongoDB)
+Justificativa:
+Escolhi um banco de documentos porque ele armazena dados em formato semelhante ao JSON,
+ideal para representar entregas com origem, destino e status.
+Além disso, é flexível, fácil de escalar e rápido para leituras e escritas em tempo real.

@@ -1,0 +1,17 @@
+Buscar todas as entregas com status em trânsito de um cliente:
+
+db.entregas.find(
+  { status: "em trânsito", cliente_id: "cliente_123" },
+  { _id: 1, origem: 1, destino: 1, data_coleta: 1 }
+);
+
+Índice Composto:
+
+db.entregas.createIndex({ cliente_id: 1, status: 1 });
+
+Projeção de Campos:
+Traz apenas os dados necessários para economizar rede/memória.
+
+Explain (Análise de Desempenho):
+
+db.entregas.find({ cliente_id: "cliente_123", status: "em trânsito" }).explain("executionStats");

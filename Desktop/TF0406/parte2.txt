@@ -1,0 +1,11 @@
+Tipo de Escalabilidade
+Horizontal
+Motivo: Permite lidar com milhares de requisições simultâneas em tempo real, adicionando novos servidores (shards) conforme necessário.
+
+Estratégia de Sharding
+Tipo: Geográfico
+
+Chave de Partição: origem.estado
+
+Justificativa: Entregas são geralmente processadas por região. Isso permite distribuir a carga por área geográfica, melhorando performance.
+
